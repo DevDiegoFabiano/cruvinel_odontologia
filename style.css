@@ -512,6 +512,10 @@ footer .social-links {
   visibility: visible;
   transform: translateY(0);
 }
+footer img { 
+  max-width: 18rem;
+  max-height: 18rem;
+}
 
 /*=== RESPONSIVO =================================*/
 @media (min-width: 1024px) {
@@ -816,4 +820,26 @@ footer .social-links {
   footer p {
     margin-bottom: 0
   }
+
+  footer img { 
+    max-width: 25rem;
+    max-height: 25rem;
+  }
+
+  .ef-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .ef-bounce-in:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
 }
